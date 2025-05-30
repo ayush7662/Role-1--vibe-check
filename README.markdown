@@ -2,7 +2,7 @@
 
 An AI-powered quiz platform that lets you create engaging quizzes instantly, uncover personality insights, and share with friends. Whether you're testing knowledge or exploring vibes, Vibe Check makes learning and self-discovery fun and interactive.
 
-**Live Demo:** [https://vibe-check-one.vercel.app/](https://vibe-check-one.vercel.app/)
+*Live Demo:* [https://role-1-vibe-check.vercel.app/](https://role-1-vibe-check.vercel.app/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
@@ -52,7 +52,7 @@ An AI-powered quiz platform that lets you create engaging quizzes instantly, unc
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/APSK22/vibe-check.git
+   git clone https://github.com/ayush7662/Role-1--vibe-check.git
    cd vibe-check
    ```
 
@@ -110,23 +110,6 @@ To deploy Vibe Check to Vercel:
 3. Add the environment variables from `.env.local` in Vercel’s **Settings > Environment Variables**.
 4. Deploy the app. Vercel will handle the Next.js build and deployment automatically.
 
-## 🛤️ Roadmap
-
-- **Social Sharing**: Add one-click sharing to social media platforms.
-- **Leaderboards**: Introduce global and friend-based leaderboards for scored quizzes.
-- **Custom Themes**: Allow users to customize quiz UI with themes and colors.
-- **Multi-Language Support**: Support quizzes in multiple languages.
-- **Offline Mode**: Enable quiz-taking offline with sync on reconnection.
-
-## 🐛 Troubleshooting
-
-- **Quiz Generation Fails**: Verify your Google Gemini API key is valid and has sufficient quota. Check server logs for details.
-- **Authentication Issues**: Ensure Clerk keys are correct and the Clerk middleware is configured in `middleware.ts`.
-- **Database Errors**: Confirm all tables and RLS policies are set up in Supabase. Check for missing columns or constraints (e.g., `is_correct` in `options` should be nullable).
-- **Vibe Quiz Not Working**: Ensure the `option_interpretations` table is populated with `vibe_category` and `vibe_value`. Verify `/api/quiz/generate` inserts vibe data correctly.
-- **JSON Parsing Errors**: If the Gemini API returns markdown-wrapped JSON, ensure `generateQuiz` in `src/lib/gemini.ts` strips code blocks properly.
-
-For help, open a GitHub issue with detailed logs and steps to reproduce.
 
 ## 📜 License
 
@@ -136,8 +119,8 @@ This project is licensed under the [MIT License](LICENSE). See the LICENSE file 
 
 **Ayush Raj**
 
-- GitHub: [github.com/APSK22](https://github.com/ayush7662)
-- Email: [ajaypskulharia@gmail.com](mailto:kamalayush65@gmail.com)
+- GitHub: [github.com/ayush7662](https://github.com/ayush7662)
+- Email: [kamalayush65@gmail.com](mailto:kamalayush65@gmail.com)
 
 ## 🙌 Acknowledgments
 
